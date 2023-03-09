@@ -7,6 +7,9 @@ import demoImg from "./demo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import computer from "./computer.png";
+import download from "./download.png";
+
+import resume from "./nour_wael_resume.pdf";
 
 import waelmohamed from "./testimonialsimgs/waelmohamed.png";
 
@@ -29,6 +32,8 @@ import future_dashboard from "./future_dashboard.png";
 import hoobank from "./hoobank.png";
 
 export {
+  download,
+  resume,
   computer,
   logo,
   backend,

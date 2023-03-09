@@ -46,13 +46,16 @@ const Hero = () => {
       {!isMobile ? (
         <ComputersCanvas />
       ) : (
-        <img className="absolute bottom-[50%]" src={computer} alt="computer" />
+        <div className="absolute bottom-[30%]">
+          <img className="relative" src={computer} alt="computer" />
+          <p
+            className={`${styles.sectionSubText} ml-2 mt-2 text-secondary italic text-[10px] max-w-[200px] text-center`}
+          >
+            Try my portfolio on desktop to see the magic here.
+          </p>
+        </div>
       )}
-      <div
-        className={`absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center ${
-          isMobile ? "top-[30%]" : ""
-        }`}
-      >
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="z-10 absolute w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

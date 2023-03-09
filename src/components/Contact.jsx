@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { resume, download } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -25,35 +26,40 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        "service_yitdq5l",
-        "template_nnnk3ly",
-        {
-          from_name: form.name,
-          to_name: "Nour",
-          from_email: form.email,
-          to_email: "nour.w.dev@gmail.com",
-          message: form.message,
-        },
-        "RsGgI6EndRXL9m10Y"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you ! I will get back to you as soon as possible.");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.log(error);
-          setLoading(false);
-          alert = "Something went wrong.";
-        }
-      );
+    if (form.name === "" || form.email === "" || form.message === "") {
+      setLoading(false);
+      alert("Please fill out the blank fields.");
+    } else {
+      emailjs
+        .send(
+          "service_yitdq5l",
+          "template_nnnk3ly",
+          {
+            from_name: form.name,
+            to_name: "Nour",
+            from_email: form.email,
+            to_email: "nour.w.dev@gmail.com",
+            message: form.message,
+          },
+          "RsGgI6EndRXL9m10Y"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert("Thank you ! I will get back to you as soon as possible.");
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            console.log(error);
+            setLoading(false);
+            alert = "Something went wrong.";
+          }
+        );
+    }
   };
 
   return (
@@ -103,12 +109,27 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex gap-3">
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+            <a href={resume} download="Nour Wael Resume" className="w-fit">
+              <button
+                type="button"
+                className="bg-tertiary py-3 px-8 outline-none w-fit flex gap-2 justify-center items-center text-white font-bold shadow-md shadow-primary rounded-xl"
+              >
+                Resume{" "}
+                <img
+                  src={download}
+                  alt="download"
+                  className=" w-[25px] h-[25px] relative bottom-[4px]"
+                />
+              </button>
+            </a>
+          </div>
         </form>
       </motion.div>
 
