@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import computer from "./computer.png";
 import download from "./download.png";
+import linkedin from "./linkedin.png";
 
 import resume from "./nour_wael_resume.pdf";
 
@@ -32,6 +33,7 @@ import future_dashboard from "./future_dashboard.png";
 import hoobank from "./hoobank.png";
 
 export {
+  linkedin,
   download,
   resume,
   computer,

@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { resume, download } from "../assets";
+import { resume, download, linkedin } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -130,6 +130,13 @@ const Contact = () => {
               </button>
             </a>
           </div>
+          <a
+            href="https://www.linkedin.com/in/nour-waell/"
+            target="_blank"
+            className="w-fit"
+          >
+            <img src={linkedin} alt="linkedin" className="w-[35px] h[35px]" />
+          </a>
         </form>
       </motion.div>
 
