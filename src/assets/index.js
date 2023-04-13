@@ -31,6 +31,7 @@ import quickr from "./company/quickr.png";
 import landing from "./landing.png";
 import future_dashboard from "./future_dashboard.png";
 import hoobank from "./hoobank.png";
+import magicimages from "./magicimages.png";
 
 export {
   linkedin,
@@ -61,4 +62,5 @@ export {
   future_dashboard,
   hoobank,
   waelmohamed,
+  magicimages,
 };

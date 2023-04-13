@@ -16,6 +16,7 @@ import {
   landing,
   future_dashboard,
   hoobank,
+  magicimages,
   threejs,
   waelmohamed,
 } from "../assets";
@@ -127,28 +128,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Fundamentals Of Vanilla",
-    description:
-      "Landing page that focuses on mastering the fundamentals of vanilla front-end basics without using frameworks, it contains a lot of cool css and javascript features with a simple CRUD system",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: landing,
-    source_code_link: "https://github.com/NourWaell/Dynamic-Landing-Page",
-    demo: "https://static-template-puce.vercel.app/",
-  },
-  {
     name: "Future Dashboard",
     description:
       "Admin Dashboard that enables users to view stats, charts, their customers and admins list through a very clean dynamic web application with many great features inside.",
@@ -169,6 +148,50 @@ const projects = [
     image: future_dashboard,
     source_code_link: "https://github.com/NourWaell/future_dashboard",
     demo: "https://future-dashboard.vercel.app/",
+  },
+  {
+    name: "Magic Images",
+    description:
+      "The AI image generator project is a web application that allows users to create unique images using OpenAI's DALL-E API. This MERN stack project features a user-friendly interface where users can input keywords to generate images based on their descriptions. Additionally, users can share their generated images as posts with the community. The project also utilizes various technologies such as TailwindCSS, Cloudinary, and FileSaver to enhance the user experience. With this project, users can explore the capabilities of AI image generation and share their creations with others.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mern",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: magicimages,
+    source_code_link: "https://github.com/NourWaell/magic-images",
+    demo: "https://magic-images.vercel.app/",
+  },
+  {
+    name: "Fundamentals Of Vanilla",
+    description:
+      "Landing page that focuses on mastering the fundamentals of vanilla front-end basics without using frameworks, it contains a lot of cool css and javascript features with a simple CRUD system",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: landing,
+    source_code_link: "https://github.com/NourWaell/Dynamic-Landing-Page",
+    demo: "https://static-template-puce.vercel.app/",
   },
   {
     name: "Modern Bank",
