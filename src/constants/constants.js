@@ -152,7 +152,7 @@ const projects = [
   {
     name: "Magic Images",
     description:
-      "The AI image generator project is a web application that allows users to create unique images using OpenAI's DALL-E API. This MERN stack project features a user-friendly interface where users can input keywords to generate images based on their descriptions. Additionally, users can share their generated images as posts with the community. The project also utilizes various technologies such as TailwindCSS, Cloudinary, and FileSaver to enhance the user experience. With this project, users can explore the capabilities of AI image generation and share their creations with others.",
+      "Magic Images is a web app that uses OpenAI's DALL-E API to generate unique images based on user input. Users can create and share images with the community using the MERN stack, along with additional technologies like TailwindCSS, Cloudinary, and FileSaver.",
     tags: [
       {
         name: "react",
