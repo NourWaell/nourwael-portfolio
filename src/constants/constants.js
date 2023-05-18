@@ -107,10 +107,11 @@ const experiences = [
     date: "October 2022 - February 2023",
     points: [
       "Translated Figma designs to visually appealing and functional user interfaces using React JS.",
-      "Worked in a software development life cycle with a team of 6+ engineers to obtain the full logic for our React app.",
-      "Contributed significantly in the maintenance of 50-60% of the front-end codebase, including the implementation of new features.",
-      "Played a key role in a team re-creating a website from a mobile application, turning 50 pages into 4 web pages through 40 iterations to ensure a high level of quality and user experience.",
-      "Led the creation of 1 landing page, user profile page, registration and sign-in forms with their authentication logic and fetching user's data from our API to display in user's profile.",
+      "Successfully managed the project from inception to delivery, creating a user-friendly interface with good user experience for our product startup.",
+      "Developed and executed project plans, timelines, and schedules, resulting in timely delivery of the application.",
+      "Coordinated with the development team to ensure that the application was built according to specifications, delivering a fully functional product on schedule.",
+      "Improved the overall performance of the application by 20% through implementing optimized code, improving user interface design, and ensuring the responsiveness of the application across multiple devices and platforms.",
+      "Developed a user-friendly profile page, a responsive landing page and a login and registration page.",
     ],
   },
 ];
