@@ -19,6 +19,7 @@ import {
   magicimages,
   threejs,
   waelmohamed,
+  quickrWeb,
 } from "../assets";
 
 export const navLinks = [
@@ -211,6 +212,28 @@ const projects = [
     image: hoobank,
     source_code_link: "https://github.com/NourWaell/bank_modern_app",
     demo: "https://bank-modern-app-lac.vercel.app/",
+  },
+  {
+    name: "Quickr",
+    description:
+      "Quickr is a technology company specializing in NFC solutions. We create NFC-enabled smart cards for secure data exchange in various industries, such as finance, healthcare, and hospitality. Our mission is to enhance convenience and security through innovative NFC technology, transforming how businesses and individuals interact.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: quickrWeb,
+    source_code_link: "#",
+    demo: "https://quickr.digital/",
   },
 ];
 
