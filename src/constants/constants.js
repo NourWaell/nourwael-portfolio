@@ -255,7 +255,7 @@ const projects = [
       },
     ],
     image: thewildoasis,
-    source_code_link: "#",
+    source_code_link: "https://github.com/NourWaell/the-wild-oasis",
     demo: "https://the-wild-oasis-hotels.vercel.app/",
   },
 ];
