@@ -20,6 +20,7 @@ import {
   threejs,
   waelmohamed,
   quickrWeb,
+  thewildoasis,
 } from "../assets";
 
 export const navLinks = [
@@ -234,6 +235,28 @@ const projects = [
     image: quickrWeb,
     source_code_link: "#",
     demo: "https://quickr.digital/",
+  },
+  {
+    name: "The Wild Oasis",
+    description:
+      "The Wild Oasis is a comprehensive web application template designed to facilitate the management of bookings, stays, cabins, and guest information within a serene and picturesque oasis. Built on a foundation of modern technologies, this project leverages the power of Supabase for secure data storage and React for a seamless user interface.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "reactquery",
+        color: "green-text-gradient",
+      },
+    ],
+    image: thewildoasis,
+    source_code_link: "#",
+    demo: "https://the-wild-oasis-hotels.vercel.app/",
   },
 ];
 

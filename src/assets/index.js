@@ -33,8 +33,10 @@ import future_dashboard from "./future_dashboard.png";
 import hoobank from "./hoobank.png";
 import magicimages from "./magicimages.png";
 import quickrWeb from "./quickr-web.png";
+import thewildoasis from "./thewildoasis.png";
 
 export {
+  thewildoasis,
   quickrWeb,
   linkedin,
   download,
